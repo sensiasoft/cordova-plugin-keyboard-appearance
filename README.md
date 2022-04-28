@@ -17,7 +17,7 @@ From [npm](https://www.npmjs.com/package/cordova-plugin-keyboard-appearance) (st
 
 From github latest (may not be stable)
 
-`cordova plugin add https://github.com/gabrielribeiro/cordova-plugin-keyboard-appearance`
+`cordova plugin add https://github.com/sensiasoft/cordova-plugin-keyboard-appearance`
 
 # Methods
 
