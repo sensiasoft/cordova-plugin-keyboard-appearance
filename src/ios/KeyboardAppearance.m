@@ -66,7 +66,7 @@ static NSString* UITraitsClassString;
         return UIKeyboardAppearanceLight;
     });
 
-    for (NSString* classString in @[UIClassString, UITraitsClassString]) {
+    for (NSString* classString in @[WKClassString, UITraitsClassString]) {
         Class c = NSClassFromString(classString);
         Method m = class_getInstanceMethod(c, @selector(keyboardAppearance));
 
@@ -77,13 +77,10 @@ static NSString* UITraitsClassString;
         }
     }
 
-    [UIToolbar.appearance setTintColor:([style isEqualToString:@"dark"] ? UIColor.whiteColor : UIToolbar.appearance.tintColor)];
-
+    /*[UIToolbar.appearance setTintColor:([style isEqualToString:@"dark"] ? UIColor.whiteColor : UIToolbar.appearance.tintColor)];
     [UIToolbar.appearance setBarTintColor:([style isEqualToString:@"dark"] ? UIColor.darkGrayColor : UIToolbar.appearance.barTintColor)];
-
     [UIToolbar.appearance setBarStyle: ([style isEqualToString:@"dark"] ? UIBarStyleBlack : UIBarStyleDefault)];
-
-    [UIToolbar.appearance setTranslucent:YES];
+    [UIToolbar.appearance setTranslucent:YES];*/
 
     _keyboardStyle = style;
 }
